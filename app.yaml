@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  type: LoadBalancer 
+  type: LoadBalancer
   ports:
     - port: 80
       targetPort: 80
@@ -15,7 +15,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8s-kubernetes44-jerwin33
+  name: k8s-kubernetes33-jerwin44
   labels:
     app: nginx
 spec:
@@ -31,7 +31,7 @@ spec:
       initContainers:
         - name: init-html
           image: curlimages/curl
-          command: ["sh", "-c", "curl -o /usr/share/nginx/html/index.html https://raw.githubusercontent.com/castillojerwin435/KUBERNETES/main/app.yaml"] # change this
+          command: ["sh", "-c", "curl -o /usr/share/nginx/html/index.html https://raw.githubusercontent.com/castillojerwin435/KUBERNETES/main/app.yaml"]
           volumeMounts:
             - name: html-volume
               mountPath: /usr/share/nginx/html
@@ -46,3 +46,4 @@ spec:
       volumes:
         - name: html-volume
           emptyDir: {}
+
