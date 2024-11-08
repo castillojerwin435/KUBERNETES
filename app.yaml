@@ -15,7 +15,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8s-activity-jerwin 44
+  name: k8s-activity-jerwin44
   labels:
     app: nginx
 spec:
