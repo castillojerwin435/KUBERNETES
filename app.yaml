@@ -15,7 +15,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8s-jerwin33-kubernetes44
+  name: k8s-kubernetes44-jerwin33
   labels:
     app: nginx
 spec:
